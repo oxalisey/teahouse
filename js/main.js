@@ -316,6 +316,6 @@ window.placeOrder = function() {
         renderCart();
     }
     setTimeout(() => {
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         }, 1000);
 };
