@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Godunova Alena">
+	<meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+	<meta name="keywords" content="чайный магазин">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Чёрный и красный чай</title>
+	<link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="main.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li class="dropdown"> 
+            	<a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+<!--Каталог-->
+<main class="catalog-wrapper">
+    <h1 class="catalog-title">Чёрный и красный чай</h1>
+    <div class="product-grid">
+<!-- 1 блок -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_1.png" alt="Индийский чай OP"> </div>
+            <h3 class="product-name">Индийский чай OP <br> 200г</h3>
+            <p class="product-price">290 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Индийский чай OP', 290, 'img/cat1_1.png')"> В корзину </button> </div>
+<!-- блок 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_2.png" alt="Ассам OPA"> </div>
+            <h3 class="product-name">Чай Ассам OPA <br> 150г</h3>
+            <p class="product-price">300 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Ассам OPA', 300, 'img/cat1_2.png')"> В корзину </button> </div>
+<!-- блок 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_3.png" alt="Чай Цейлон ОРА"> </div>
+            <h3 class="product-name">Чай Цейлон ОРА <br> 150г </h3>
+            <p class="product-price">335 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Чай Цейлон ОРА', 335, 'img/cat1_3.png')"> В корзину </button> </div>
+<!-- блок 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_4.png" alt="Чай Дарджилинг"> </div>
+            <h3 class="product-name">Чай Дарджилинг <br> 200г</h3>
+            <p class="product-price">645 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Чай Дарджилинг', 645, 'img/cat1_4.png')"> В корзину </button> </div>
+<!-- блок 5 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_5.png" alt="Красный чай Золотой пух"> </div>
+            <h3 class="product-name">Красный чай Золотой пух <br> 200г</h3>
+            <p class="product-price">500 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Красный чай Золотой пух', 500, 'img/cat1_5.png')"> В корзину </button> </div>
+<!-- блок 6 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_6.png" alt="Дянь Хун"> </div>
+            <h3 class="product-name">Красный чай Дянь Хун <br> 200г</h3>
+            <p class="product-price">485 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Красный чай Дянь Хун', 485, 'img/cat1_6.png')"> В корзину </button> </div>
+<!-- блок 7 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_7.png" alt="Кенийский чай"> </div>
+            <h3 class="product-name">Кенийский чай <br> 200г</h3>
+            <p class="product-price">525 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Кенийский чай', 525, 'img/cat1_7.png')"> В корзину </button> </div>
+<!-- блок 8 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_8.png" alt="Лапсанг Сушонг"> </div>
+            <h3 class="product-name">Лапсанг Сушонг <br> 150г</h3>
+            <p class="product-price">480 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Лапсанг Сушонг - Копченый чай', 480, 'img/cat1_8.png')"> В корзину </button> </div>
+<!-- блок 9 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="img/cat1_9.png" alt="Вьетнамский чай ОР"> </div>
+            <h3 class="product-name">Вьетнамский чай ОР <br> 200г</h3>
+            <p class="product-price">225 ₽</p>
+            <button class="promo-button add-to-cart-btn" 
+                    onclick="addToCart('Вьетнамский чай ОР', 225, 'img/cat1_9.png')"> В корзину </button> </div>
+    </div>
+</main>
+<!--Футер-->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div>
+        </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Godunova Alena">
+    <meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+    <meta name="keywords" content="чайный магазин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Личный кабинет</title>
+    <link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="main.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li class="dropdown"> 
+                <a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+<!--Пользователь-->
+<div class="profile-container">
+    <h2>Личный кабинет</h2>
+    
+    <div class="profile-card">
+        <div class="avatar-upload">
+            <div class="avatar-edit">
+                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                <label for="imageUpload">✎</label>
+            </div>
+            <div class="avatar-preview">
+                <div id="imagePreview" style="background-image: url('../img/default-avatar.png');">
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <input type="text" id="userName" placeholder="Имя и Фамилия">
+            <input type="email" id="userEmail" placeholder="E-mail">
+            <p class="bonus-text">Ваши чаинки: <span id="bonusCount">150</span> 🍃</p>
+            <button id="saveProfile">Сохранить изменения</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Футер-->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div>
+        </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

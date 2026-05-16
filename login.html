@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Godunova Alena">
+    <meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+    <meta name="keywords" content="чайный магазин">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Вход</title>
+    <link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="main.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li class="dropdown"> 
+                <a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+<!--РЕГИСТРАЦИЯ-->
+
+<main class="auth-wrapper">
+    <div class="auth-container">
+        <h1 class="auth-title">Вход в личный кабинет</h1>
+        <p class="auth-subtitle">Введите пожалуйста E-mail или номер телефона и пароль для входа в аккаунт</p>
+        
+        <form class="auth-form">
+            <div class="input-group"><input type="text" placeholder="E-mail"></div>
+            <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Введите пароль">
+            <img src="img/eye-off.png" id="togglePassword" alt="Показать пароль">
+            </div>
+            <div class="form-options">
+                <label class="checkbox-container">
+                    <input type="checkbox"> <span class="checkmark"></span> Запомнить меня
+                </label>
+            </div>
+            
+            <div class="form-links">
+                <a href="#">Забыл пароль</a>
+                <br>
+                <a href="#">Проблемы со входом</a>
+            </div>
+            <button type="submit" class="register-btn"><a href="user.html">Войти</a> </button>
+        </form>
+    </div>
+</main>
+
+<!--Футер-->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div>
+        </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

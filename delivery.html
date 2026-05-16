@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Godunova Alena">
+	<meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+	<meta name="keywords" content="чайный магазин">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Доставка и оплата</title>
+	<link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="main.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li class="dropdown"> 
+            	<a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+<!--Доставка-->
+<main class="delivery-page">
+    <header class="delivery-header">
+        <h1 class="delivery-main-title">Доставка и оплата</h1>
+        <p>Мы бережно упакуем и доставим ваш чай в кратчайшие сроки.</p>
+    </header>
+    <section class="delivery-methods">
+        <div class="method-card">
+            <div class="method-icon">🚚</div>
+            <h3>Курьерская доставка</h3>
+            <p>До двери по всему городу. Курьер свяжется с вами за час до прибытия.</p>
+            <ul class="method-details">
+                <li>Срок: 1-2 дня</li>
+                <li>Стоимость: 350 ₽</li>
+                <li><strong>Бесплатно при заказе от 3500 ₽</strong></li> </ul>
+        </div>
+        <div class="method-card featured">
+            <div class="method-icon">📦</div>
+            <h3>Пункты выдачи (СДЭК/Boxberry)</h3>
+            <p>Более 100 точек по городу. Забирайте заказ в удобное для вас время.</p>
+            <ul class="method-details">
+                <li>Срок: 2-3 дня</li>
+                <li>Стоимость: от 190 ₽</li>
+                <li>Хранение: 7 дней</li> </ul>
+        </div>
+        <div class="method-card">
+            <div class="method-icon">🏠</div>
+            <h3>Самовывоз из магазина</h3>
+            <p>Заберите заказ самостоятельно в нашем уютном магазине и получите бонус.</p>
+            <ul class="method-details">
+                <li>Срок: сегодня</li>
+                <li>Стоимость: 0 ₽</li>
+                <li>Скидка 5% на весь заказ</li> </ul>
+        </div>
+    </section>
+    <section class="payment-section">
+        <h2 class="section-title">Способы оплаты</h2>
+        <div class="payment-grid">
+            <div class="payment-item">
+                <span>💳</span>
+                <p>Картой на сайте</p>
+            </div>
+            <div class="payment-item">
+                <span>📱</span>
+                <p>СБП / QR-код</p>
+            </div>
+            <div class="payment-item">
+                <span>💵</span>
+                <p>Наличными курьеру</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-info">
+            <h2>Где мы находимся?</h2>
+            <p>Наш магазин и точка выдачи заказов:</p>
+            <address>
+                ул. Чайного Листа, д. 15<br>
+                Ежедневно: 09:00 — 21:00<br>
+                <a href="tel:+79000000000">+7 (900) 000-00-00</a>
+            </address>
+        </div>
+        <div class="map-placeholder">
+            <img src="img/map-mockup.jpg" alt="Карта проезда">
+        </div>
+    </section>
+</main>
+
+<!--Футер-->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div>
+        </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

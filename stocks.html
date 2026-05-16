@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Godunova Alena">
+	<meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+	<meta name="keywords" content="чайный магазин">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Акции</title>
+	<link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="main.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li class="dropdown"> 
+            	<a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+
+<!--акции-->
+<main class="promo-container">
+    <header class="promo-header">
+        <h1 class="promo-main-title">Акции</h1>
+        <p>Маленькие радости для больших чайных моментов</p>
+    </header>
+
+    <div class="promo-grid">
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/degist.jpg" alt="Дегустационный сет">
+                <span class="promo-tag">Хит</span>
+            </div>
+            <div class="promo-content">
+                <h3>Дегустационный сет «Пять миров»</h3>
+                <p>Соберите 5 любых сортов по 25г. Идеальный способ найти свой вкус, не покупая целую упаковку.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">1 290 ₽ <del>1 600 ₽</del></span>
+                    <button class="promo-action" 
+                        onclick="addToCart('Дегустационный сет «Пять миров»', 1290, 'img/degist.jpg')"> В корзину</button> </div>
+            </div>
+        </div>
+
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/monthtea.jpg" alt="Чай месяца">
+                <span class="promo-tag accent">Подарок</span>
+            </div>
+            <div class="promo-content">
+                <h3>Чай месяца: Габа Алишань</h3>
+                <p>При покупке 100г легендарного чая Габа — дарим бамбуковое ситечко для правильного заваривания.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">450 ₽</span>
+                    <button class="promo-action" 
+                        onclick="addToCart('Габа Алишань', 450, 'img/monthtea.jpg')"> В корзину</button> </div>
+            </div>
+        </div>
+
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/munten.jpg" alt="Скидка">
+                <span class="promo-tag">-10%</span>
+            </div>
+            <div class="promo-content">
+                <h3>Первое знакомство</h3>
+                <p>Зарегистрируйтесь в личном кабинете и получите скидку 10% на ваш самый первый заказ в нашем магазине.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">Скидка на всё</span>
+                    <a href="auth.html" class="promo-action">Регистрация</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/thursday.jpg" alt="Счастливые часы">
+                <span class="promo-tag">Sale</span>
+            </div>
+            <div class="promo-content">
+                <h3>Счастливые часы</h3>
+                <p>Каждый вторник и четверг с 10:00 до 13:00 скидка 20% на все сорта свежего зеленого чая.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">-20%</span>
+                    <a href="catalog1.html" class="promo-action">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/set.jpg" alt="Набор">
+                <span class="promo-tag accent">Выгода</span>
+            </div>
+            <div class="promo-content">
+                <h3>Набор «Чай на двоих»</h3>
+                <p>Изящный фарфоровый чайник и две чашки + упаковка классического красного чая со скидкой 15%.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">3 450 ₽ <del>4 100 ₽</del></span>
+                    <button class="promo-action" 
+                        onclick="addToCart('Набор «Чай на двоих»', 3450, 'img/set.jpg')"> В корзину</button> </div>
+            </div>
+        </div>
+
+        <div class="promo-card featured">
+            <div class="promo-image">
+                <img src="img/delivery.jpg" alt="Доставка">
+                <span class="promo-tag">0 ₽</span>
+            </div>
+            <div class="promo-content">
+                <h3>За наш счёт</h3>
+                <p>Курьер бесплатно доставит ваш заказ в любую точку страны, если сумма покупок превысит 3 500 рублей.</p>
+                <div class="promo-footer">
+                    <span class="promo-price">Бесплатно</span>
+                    <a href="delivery.html" class="promo-action">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--Футер-->    
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div>
+        </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
