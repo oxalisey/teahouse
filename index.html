@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Godunova Alena">
+	<meta name="description" content="Курсовая работа: Чайный интернет-магазин">
+	<meta name="keywords" content="чайный магазин">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Главная страница</title>
+	<link rel="icon" href="img/logo.jpeg">
+</head>
+<body>
+<!--Хедер-->
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <img src="img/logo.png" class="logo-circle" alt="Logo"> 
+            <a href="index.html" class="logo-text">Чайный уголок</a>
+        </div>
+    <nav class="main-nav"> <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li class="dropdown"> 
+            	<a href="#" class="dropbtn" id="catalogBtn">Каталог</a>
+            <div class="dropdown-content" id="catalogDropdown">
+                <a href="catalog1.html" class="catalog-item">Чёрный и красный чай</a>
+                <a href="catalog2.html" class="catalog-item">Зелёный и белый чай</a>
+                <a href="catalog3.html" class="catalog-item">Травяные <br> смеси</a>
+             </div></li>
+            <li><a href="stocks.html">Акции</a></li>
+            <li><a href="delivery.html">Доставка</a></li></ul></nav>
+<div class="header-tools">
+    <a href="basket.html" class="header-icon-link">
+        <img src="img/cart.png" alt="Корзина"></a>
+    <a href="auth.html" class="header-icon-link">
+        <img src="img/user.png" alt="Профиль"></a></div>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder=" ">
+    <span class="search-icon"><img src="img/search-icon.png"></span></div>
+</header>
+<!--Акция-->
+<div class="main-banner">
+<img src="img/stock.jpg"  alt="Акция: Первый чай с заботой">
+</div>
+<center><button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Первый чай с заботой (Скидка учитывается при оплате!)', 0 , 'img/stock.jpg')">В корзину</button> </div></center>
+<!--Новинки-->
+<section class="catalog">
+    <h2 class="vibe-title">Новинки</h2>
+    <div class="product-container">
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #6b7a4a;">Молочный Улун</h3>
+            <img src="img/oolong.png" alt="Молочный Улун" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Молочный Улун', 350, 'img/oolong.png')">В корзину</button> </div>
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #8c4a5d;">Морозная Ягода</h3>
+            <img src="img/berry.png" alt="Морозная Ягода" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Морозная Ягода', 350, 'img/berry.png')">В корзину</button> </div>
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #5d7a4a;">Зеленый Жасмин</h3>
+            <img src="img/jasmine.png" alt="Зеленый Жасмин" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Зеленый Жасмин', 350, 'img/jasmine.png')">В корзину</button> </div>
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #b56a3e;">Имбирный Цитрус</h3>
+            <img src="img/citrus.png" alt="Имбирный Цитрус" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Имбирный Цитрус', 350, 'img/citrus.png')">В корзину</button> </div>
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #7a8a99;">Ромашка-Мелисса</h3>
+            <img src="img/chamomile.png" alt="Ромашка-Мелисса" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Ромашка-Мелисса', 350, 'img/chamomile.png')">В корзину</button> </div>
+        <div class="tea-card">
+            <h3 class="tea-name" style="color: #a64d5d;">Малиновое Наслаждение</h3>
+            <img src="img/raspberry.png" alt="Малиновое Наслаждение" class="tea-img">
+            <button class="details-btn add-to-cart-btn" 
+                onclick=" addToCart('Малиновое Наслаждение', 350, 'img/raspberry.png')">В корзину</button> </div>
+    </div>
+</section>
+<!-- Бренды -->
+<section class="partners-section">
+    <h2 class="vibe-title">Бренды</h2>
+    <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide active-slide">
+                    <img src="img/greenfield.jpg" alt="Greenfield"></div>
+                <div class="carousel-slide">
+                    <img src="img/сurtis.jpg" alt="Curtis"></div>
+                <div class="carousel-slide">
+                    <img src="img/tess.jpg" alt="Tess"></div>
+                <div class="carousel-slide">
+                    <img src="img/ahmad.jpg" alt="Ahmad Tea"></div>
+                 <div class="carousel-slide">
+                    <img src="img/nuri.jpg" alt="Принцесса Нури"></div>
+            </div>
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </div>
+</section>
+<!--отзывы-->
+<section class="reviews-section">
+        <h2 class="vibe-title">Отзывы</h2>
+        <div class="overall-rating">
+            <span class="rating-number">5.0</span>
+            <div class="rating-details">
+                <div class="stars">★★★★★</div>
+                <p class="reviews-count">78 отзывов</p></div> </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="img/ava1.jpg" alt="Анастасия" class="avatar">
+                <div class="review-info">
+                    <h4 class="user-name">Анастасия</h4>
+                    <div class="user-stars">★★★★★</div>
+                    <p class="review-text">Покупаю чаи только здесь! Доставка быстрая, упаковка качественная. Всегда рекумендую Вас своим друзьям!!!</p></div> </div>
+            <div class="review-card">
+                <img src="img/ava2.jpg" alt="Максим" class="avatar">
+                <div class="review-info">
+                    <h4 class="user-name">Максим</h4>
+                    <div class="user-stars">★★★★★</div>
+                    <p class="review-text">Решил купить ваш чай, заварил, выпил и не умер от разочарования. Неожиданно. Ставлю 5 звёзд — видимо, это и есть счастье в современных реалиях.</p></div> </div>
+            <div class="review-card hidden-review">
+                <img src="img/ava3.jpg" alt="Гость" class="avatar">
+                <div class="review-info">
+                    <h4 class="user-name">Гость</h4>
+                    <div class="user-stars">★★★★★</div>
+                    <p class="review-text">Чай — пушка, упаковка — кайф. Сидишь, пьёшь, и настроение сразу вверх. Однозначно 5 звёзд, буду покупать ещё!</p></div> </div>
+            <div class="review-card hidden-review">
+                <img src="img/ava4.jpg" alt="Наталья" class="avatar">
+                <div class="review-info">
+                    <h4 class="user-name">Наталья</h4>
+                    <div class="user-stars">★★★★★</div>
+                    <p class="review-text">Заказала “Малиновое наслаждение” и получила НАСТОЯЩЕЕ наслаждение!!!</p> </div> </div>
+        </div>
+        <button class="load-more-btn" id="loadMoreBtn">Читать ещё</button> </section>
+<!--Футер-->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Чайный уголок"> </div>
+            <div class="brand-text">
+                <h2>Чайный уголок</h2>
+                <p>Мы отбираем чай с характером и душой.<br>
+                Лист к листу, вкус к вкусу.</p></div> </div>
+        <div class="footer-nav">
+            <h3>📦 Информация</h3>
+            <ul>
+                <li><a href="files/о_нас_чайный_уголок.docx" download>О нас</a></li>
+                <li><a href="files/контакты_чайный_уголок.docx" download>Контакты</a></li>
+                <li><a href="files/политика_конфиденциальности.docx" download>Политика конфиденциальности</a></li>
+                <li><a href="files/пользовательское_соглашение.docx" download>Пользовательское соглашение</a></li> </ul>
+        </div>
+        <div class="footer-contacts">
+            <h3>📍 Контакты</h3>
+            <ul>
+                <li>📞 +7 (900) 000-00-00</li>
+                <li>✉️ info@teashop.ru</li>
+                <li>🕒 Ежедневно с 9:00 до 21:00</li> </ul> </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
